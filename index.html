@@ -1,75 +1,93 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project HTML</title>
+    <title>Hébergements</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
+    <!-- En-tête avec logo et barre de recherche -->
     <header>
-
-        <nav>
-            <img src="Logo.png" alt="Logo">
-        </nav>
-        
-        <input type="text" id="SearchTxt">
-        
-        <ul>
-            <li>Filtres</li>
-            <li><button>Prix</button></li>
-            <li><button>Nouveauté</button></li>
-            <li><button>Pertinence</button></li>
-        </ul>
-        
+        <h1><a href="#">
+            <img src="Logo.png" alt="Logo Travel" class="logo">
+        </a></h1>
+        <form class="search-bar" role="search">
+            <input type="search" id="search-destination" name="search-destination" placeholder="Rechercher une destination">
+            <button type="submit" aria-label="Rechercher">
+                <img src="SearchGlass.png" alt="Icone de recherche">
+            </button>
+        </form>
     </header>
 
-    <h2>Hébergements</h2>
-
-    <section class="selection">
-            
-        <article class="Choice1">
-            <img src="chair.jpg" alt="chair">
-            <h5>Plage privée</h5>
-            <p>La hournée a partir de 20$</p>
-        </article>
-
-        <article class="Choice2">
-            <img src="chair.jpg" alt="chair">
-            <h5>Plage privée</h5>
-            <p>La hournée a partir de 20$</p>
-        </article>
-
-        <article class="Choice3">
-            <img src="chair.jpg" alt="chair">
-            <h5>Plage privée</h5>
-            <p>La hournée a partir de 20$</p>
-        </article>
-
-        <article class="Choice4">
-            <img src="chair.jpg" alt="chair">
-            <h5>Plage privée</h5>
-            <p>La hournée a partir de 20$</p>
-        </article>
-
-        <article class="Choice5">
-            <img src="chair.jpg" alt="chair">
-            <h5>Plage privée</h5>
-            <p>La hournée a partir de 20$</p>
-        </article>
-
-        <article class="Choice6">
-            <img src="chair.jpg" alt="chair">
-            <h5>Plage privée</h5>
-            <p>La hournée a partir de 20$</p>
-        </article>
-        
+    <!-- Section des filtres -->
+    <section aria-labelledby="filters-title">
+        <h2 id="filters-title" class="visually-hidden">Filtres</h2>
+        <div class="list">
+            <button type="button">Filtres</button>
+            <button type="button">Prix</button>
+            <button type="button">Nouveauté</button>
+            <button type="button">Pertinence</button>
+        </div>
     </section>
-    
-</body>
 
+    <!-- Section principale des hébergements -->
+    <main>
+        <h2 id="accommodations-title">Hébergements</h2>
+        <section aria-labelledby="accommodations-title" class="grid-container">
+
+            <article>
+                <img src="chair.jpg" alt="Image de l'Hôtel 1">
+                <header>
+                    <h3>Hotel 1</h3>
+                </header>
+                <p>Nuit à partir de 25€</p>
+            </article>
+
+            <article>
+                <img src="hotel2.jpg" alt="Image de l'Hôtel 2">
+                <header>
+                    <h3>Hotel 2</h3>
+                </header>
+                <p>Nuit à partir de 52€</p>
+            </article>
+
+            <article>
+                <img src="hotel3.jpg" alt="Image de l'Hôtel 3">
+                <header>
+                    <h3>Hotel 3</h3>
+                </header>
+                <p>Nuit à partir de 25€</p>
+            </article>
+
+            <article>
+                <img src="hotel4.jpg" alt="Image de l'Hôtel 4">
+                <header>
+                    <h3>Hotel 4</h3>
+                </header>
+                <p>Nuit à partir de 46€</p>
+            </article>
+
+            <article>
+                <img src="hotel5.jpg" alt="Image de l'Hôtel 5">
+                <header>
+                    <h3>Hotel 5</h3>
+                </header>
+                <p>Nuit à partir de 23€</p>
+            </article>
+
+            <article>
+                <img src="hotel6.jpg" alt="Image de l'Hôtel 6">
+                <header>
+                    <h3>Hotel 6</h3>
+                </header>
+                <p>Nuit à partir de 96€</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Contenu du pied de page -->
+    </footer>
+</body>
 </html>
