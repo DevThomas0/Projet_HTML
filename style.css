@@ -56,6 +56,21 @@
     transition: background-color 0.3s ease;
 }
 
+.list .button-link {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Couleur de fond des boutons */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.list .button-link:hover {
+    background-color: #45a049; /* Couleur au survol */
+}
+
 .list>button:hover {
     background-color: #F0F0F0;
 }
