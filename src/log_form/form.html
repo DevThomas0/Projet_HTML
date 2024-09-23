@@ -9,7 +9,7 @@
 <body>
 
 <div class="login-container">
-    <form action="#" method="post" class="login-form">
+    <form action="" method="post" class="login-form">
         <h2>Login</h2>
 
         <!-- Username Field -->
@@ -36,39 +36,39 @@
             <div class="radio-group">
                 <label>
                     <input type="radio" name="usertype" value="user" checked>
-                    User
+                    Homme
                 </label>
                 <label>
                     <input type="radio" name="usertype" value="admin">
-                    Admin
+                    Femme
                 </label>
             </div>
         </div>
 
-        <!-- First Select Input Field -->
+        <!-- Checkbox Input Field (Replaced the first select field) -->
         <div class="form-group">
-            <label for="country">Country:</label>
-            <select id="country" name="country" required>
-                <option value="">--Select Country--</option>
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-                <!-- Add more countries as needed -->
+            <label>
+                <input type="checkbox" name="subscribe_newsletter">
+                Vous acceptez les conditions d'utilisation
+            </label>
+        </div>
+
+        <!-- New Select Input Field (Replaced the second select field) -->
+        <div class="form-group">
+            <label for="language">Preferred Language:</label>
+            <select id="language" name="language" required>
+                <option value="">--Select Language--</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <!-- Add more languages as needed -->
             </select>
         </div>
 
-        <!-- Second Select Input Field -->
-        <div class="form-group">
-            <label for="security-question">Security Question:</label>
-            <select id="security-question" name="security_question" required>
-                <option value="">--Select a Question--</option>
-                <option value="pet">What is your pet's name?</option>
-                <option value="school">What is your mother's maiden name?</option>
-                <!-- Add more questions as needed -->
-            </select>
-        </div>
+        <!-- Sign In Button -->
+        <button type="button" class="signin-button" onclick="window.location.href='signin.html'">Connexion</button>
 
         <!-- Login Button -->
-        <button type="submit">Login</button>
+        <button type="submit">Inscrisption/button>
     </form>
 </div>
 

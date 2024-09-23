@@ -36,6 +36,10 @@ body {
     box-sizing: border-box;
 }
 
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 .radio-group {
     display: flex;
     gap: 20px;
@@ -51,10 +55,25 @@ body {
     margin-right: 5px;
 }
 
+.signin-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #008CBA; /* Blue color for Sign In button */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Space between Sign In and Login buttons */
+}
+
+.signin-button:hover {
+    background-color: #007bb5;
+}
+
 button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green color for Login button */
     color: white;
     border: none;
     font-size: 16px;
